@@ -1,11 +1,22 @@
-function compnumb (n1, n2) {
-    if (n1 > n2) {
-        return "O primeiro número que você digitou, é maior que o segundo."
-    } else if (n1 == n2) {
-        return "Os números são iguais."
-    } else {
-        return "O segundo número que você digitou, é menor que o primeiro."
+  function dayOfTheWeek (dia) {
+    switch (dia) {
+        case 1: 
+            return "Sunday"
+        case 2:
+            return "Monday"
+        case 3:
+            return "Tuesday"
+        case 4:
+            return "Wednesday"
+        case 5:
+            return "Thursday"
+        case 6:
+            return "Friday"
+        case 7:
+            return "Saturday"
+        default:
+            return "Digite um número válido de 1 à 7"
     }
-}
+  }
 
-console.log (compnumb(10,-5))
+  console.log (dayOfTheWeek(6))
